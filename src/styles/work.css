@@ -1,0 +1,72 @@
+#work-body {
+  background-color: #1a1818;
+  color: #ece7e1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+.work-title {
+  font-size: 3vw;
+}
+.work-right-column {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  padding-left: 16%;
+}
+
+.work-large-text {
+  font-size: 10vw;
+  transition: transform 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.work-large-text a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.work-large-text:hover {
+  transform: skew(-10deg);
+}
+
+/* Media Queries for Different Screen Sizes */
+
+@media (max-width: 767px) {
+  /* For small devices like phones */
+  .work-large-text {
+    font-size: 12vw;
+  }
+
+  .work-right-column {
+    padding-left: 5%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* For tablets and small laptops */
+  .work-large-text {
+    font-size: 8vw;
+  }
+
+  .work-right-column {
+    padding-left: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* For large desktops */
+  .work-large-text {
+    font-size: 145px;
+  }
+
+  .work-right-column {
+    padding-left: 16%;
+  }
+}
