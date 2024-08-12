@@ -19,6 +19,7 @@ import Work from "./component/work";
 import About from "./component/about";
 import MyNavbar from "./component/navbar";
 
+
 const App = () => (
   <Router>
     <MyNavbar />

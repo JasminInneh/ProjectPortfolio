@@ -9,8 +9,9 @@ const About = () => {
   const arrowAnimation = useSpring({
     from: { transform: "translateX(0px)" },
     to: { transform: "translateX(10px)" },
-    config: { tension: 200, friction: 10 },
-    loop: { reverse: true },
+    config: { tension: 100, friction: 25 },
+    reset: true, 
+    loop: true,
   });
 
   const [inView, setInView] = useState(false);
@@ -39,6 +40,31 @@ const About = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // useEffect(() => {
+  //   const animateArrow = () => {
+  //     const arrow = document.querySelector(".arrow");
+  //     let position = 0;
+  //     let direction = 1;
+
+  //     function moveArrow() {
+  //       if (position >= 10) {
+  //         direction = -1; // Reverse direction
+  //       } else if (position <= 0) {
+  //         direction = 1; // Move forward
+  //       }
+
+  //       position += direction;
+  //       arrow.style.transform = `translateX(${position}px)`;
+
+  //       requestAnimationFrame(moveArrow); // Continue the animation
+  //     }
+
+  //     moveArrow();
+  //   };
+
+  //   animateArrow();
+  // }, []);
 
   return (
     <div className="container-fluid" id="about-body">
@@ -211,7 +237,7 @@ const About = () => {
 
           <p>
             Let's continue to projects.{" "}
-            <animated.span style={arrowAnimation}>
+            <animated.span className="arrow" style={arrowAnimation}>
               <FontAwesomeIcon icon={faArrowRight} />
             </animated.span>
           </p>

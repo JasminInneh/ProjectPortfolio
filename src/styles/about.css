@@ -69,3 +69,7 @@
 .timeline-date a:hover {
   color: #ccc;
 }
+.arrow {
+  display: inline-block;
+  font-size: 2rem;
+}
