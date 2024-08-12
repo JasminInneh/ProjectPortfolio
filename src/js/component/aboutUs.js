@@ -1,43 +1,67 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useSpring, animated } from "react-spring";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/aboutUs.css";
 import "animate.css";
 
 const AboutUs = () => {
+  const [inView, setInView] = useState(false);
+
+  // defining useSpring animation
+  const props = useSpring({
+    opacity: inView ? 1 : 0,
+    transform: inView ? "translateY(0)" : "translateY(20px)",
+    config: { tension: 120, friction: 14 },
+  });
+
+  // detecting if component is in view
+  useEffect(() => {
+    const handleScroll = () => {
+      const top = document
+        .getElementById("aboutUs-body")
+        .getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      if (top < windowHeight) {
+        setInView(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="container-fluid" id="aboutUs-body">
       <div className="row m-5">
         <h2 className="animate__animated animate__fadeInDown">About Me.</h2>
         <div className="col-12 timeline">
-          <div className="timeline-item">
-            <div className="timeline-content">
-              <h5 className="timeline-title">Fullstack Development</h5>
-              <h6 className="timeline-date">
-                <a
-                  href="https://github.com/JasminInneh"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Github
-                </a>
-              </h6>
-              <p className="timeline-description">
-                In the digital world, first impressions are everything, and a
-                remarkable website is your most powerful tool to make a lasting
-                impact. My expertise as a full-stack developer allows me to
-                craft websites that go beyond visual appeal, delivering flawless
-                functionality and intuitive user experiences. I blend creativity
-                with technical precision, tackling complex challenges to build
-                sleek, responsive sites that captivate and engage. With a deep
-                understanding of industry standards and cutting-edge practices,
-                I ensure that every project is a masterpiece of both form and
-                function.
-              </p>
-            </div>
+          <div className="timeline-content">
+            <h5 className="timeline-title">Fullstack Development</h5>
+            <h6 className="timeline-date">
+              <a
+                href="https://github.com/JasminInneh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Github
+              </a>
+            </h6>
+            <p className="timeline-description">
+              In the digital world, first impressions are everything, and a
+              remarkable website is your most powerful tool to make a lasting
+              impact. My expertise as a full-stack developer allows me to craft
+              websites that go beyond visual appeal, delivering flawless
+              functionality and intuitive user experiences. I blend creativity
+              with technical precision, tackling complex challenges to build
+              sleek, responsive sites that captivate and engage. With a deep
+              understanding of industry standards and cutting-edge practices, I
+              ensure that every project is a masterpiece of both form and
+              function.
+            </p>
           </div>
-
-          <div className="timeline-item">
             <div className="timeline-content">
               <h5 className="timeline-title">QA Engineer</h5>
               <h6 className="timeline-date">
@@ -61,8 +85,6 @@ const AboutUs = () => {
                 expertise transforms potential into perfection.
               </p>
             </div>
-          </div>
-          <div className="timeline-item">
             <div className="timeline-content">
               <h5 className="timeline-title">EdTech</h5>
               <h6 className="timeline-date">
@@ -88,14 +110,12 @@ const AboutUs = () => {
                 learning.
               </p>
             </div>
-          </div>
           <h5 className="pb-2">My Learning</h5>
-          <div className="timeline-item">
             <div className="timeline-content">
               <h5 className="timeline-title">Fullstack Development</h5>
               <h6 className="timeline-date">
                 <a
-                  href="https://4geeksacademy.com/us/index?utm_source=google&utm_medium=cpc&utm_campaign=11031489831&utm_content=107548070545&utm_term=4geeks%20academy&cq_src=google_ads&cq_cmp=11031489831&cq_con=107548070545&cq_term=4geeks%20academy&cq_med=&cq_plac=&cq_net=g&cq_plt=gp&gad_source=1&gclid=Cj0KCQjwwuG1BhCnARIsAFWBUC2mF2bO-1k8irX7OcJBxXar7KQKoWBnoaD3r9RVkGE8qgkqDvR3usgaAsgpEALw_wcB"
+                  href="https://4geeksacademy.com/us/index"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -116,8 +136,7 @@ const AboutUs = () => {
                 ever-evolving world of technology.
               </p>
             </div>
-          </div>
-          <div className="timeline-item">
+          <animated.div style={props} className="timeline-item">
             <div className="timeline-content">
               <h5 className="timeline-title">React - The Complete Guide</h5>
               <h6 className="timeline-date">
@@ -140,8 +159,9 @@ const AboutUs = () => {
                 the ever-evolving tech landscape.
               </p>
             </div>
-          </div>
-          <div className="timeline-item">
+          </animated.div>
+
+          <animated.div style={props} className="timeline-item">
             <div className="timeline-content">
               <h5 className="timeline-title">Data Structures and Algorithms</h5>
               <h6 className="timeline-date">
@@ -164,7 +184,25 @@ const AboutUs = () => {
                 solutions.
               </p>
             </div>
-          </div>
+          </animated.div>
+          <animated.div style={props} className="timeline-item">
+            <div className="timeline-content">
+              <h5 className="timeline-title">Software Testing</h5>
+              <h6 className="timeline-date">
+                <a
+                  href="https://www.udemy.com/course/testerbootcamp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Udemy
+                </a>
+              </h6>
+              <p className="timeline-description">
+                Comprehensive course on automated and manual
+              </p>
+            </div>
+          </animated.div>
+
           <p>
             Let's continue to projects. <FontAwesomeIcon icon={faArrowRight} />
           </p>
