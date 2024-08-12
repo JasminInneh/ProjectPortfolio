@@ -8,6 +8,7 @@
   flex-direction: column;
   padding: 40px 20px;
 }
+
 .about-background-text {
   font-size: 16vw;
   text-align: center;
@@ -16,9 +17,10 @@
   margin-top: 40px;
   padding: 20px 0;
 }
+
 .timeline {
   position: relative;
-  padding-left: 40px;
+  padding-left: 40px; /* Space to position the content away from the dots */
   margin-top: 20px;
   border-left: 2px solid #ddd;
 }
@@ -32,7 +34,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: -7px;
+  left: -11px; /* Adjusted to align the dot with the timeline */
   width: 14px;
   height: 14px;
   background-color: #ddd;
@@ -60,15 +62,19 @@
   font-size: 14px;
   color: #ccc;
 }
+
 .timeline-date a {
   color: inherit;
 }
+
 .timeline-date a:visited {
   color: inherit;
 }
+
 .timeline-date a:hover {
   color: #ccc;
 }
+
 .arrow {
   display: inline-block;
   font-size: 2rem;

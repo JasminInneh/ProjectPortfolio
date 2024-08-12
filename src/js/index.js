@@ -18,7 +18,7 @@ import HomePage from "./component/homepage";
 import Work from "./component/work";
 import About from "./component/about";
 import MyNavbar from "./component/navbar";
-
+import Contact from "./component/contact";
 
 const App = () => (
   <Router>
@@ -27,6 +27,7 @@ const App = () => (
       <Route path="/" element={<HomePage />} />
       <Route path="/work" element={<Work />} />
       <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   </Router>
 );
