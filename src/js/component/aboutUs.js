@@ -2,12 +2,13 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/aboutUs.css";
+import "animate.css";
 
 const AboutUs = () => {
   return (
     <div className="container-fluid" id="aboutUs-body">
       <div className="row m-5">
-        <h2>About Me.</h2>
+        <h2 className="animate__animated animate__fadeInDown">About Me.</h2>
         <div className="col-12 timeline">
           <div className="timeline-item">
             <div className="timeline-content">

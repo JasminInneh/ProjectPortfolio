@@ -1,12 +1,15 @@
 import React from "react";
 import "../../styles/work.css";
+import "animate.css";
 
 const Work = () => {
   return (
     <div className="container-fluid" id="work-body">
       <div className="row align-items-center">
         <div className="col-12 col-md-4">
-          <h5 className="work-title mb-3">WORK</h5>
+          <h5 className="work-title mb-3 animate__animated animate__fadeInLeft">
+            WORK
+          </h5>
           <p>
             This is a showcase of my finest projects across multiple domains,
             reflecting my proficiency as a full-stack developer with a strong
