@@ -24,9 +24,11 @@ const Work = () => {
           </p>
         </div>
         <div className="col-12 col-md-8 work-right-column d-none d-md-block">
+          <a href="https://tabata-tempo-jasmin-inneh.vercel.app/#">
           <h1 className="large-text display-1 work-large-text animate__animated animate__fadeInUp">
             TABATA
           </h1>
+          </a>
           <h1 className="large-text display-1 work-large-text animate__animated animate__fadeInUp">
             SMARTSTART
           </h1>
