@@ -222,13 +222,14 @@ const About = () => {
               </p>
             </div>
           </animated.div>
-
-          <p>
-            Let's continue to projects.{" "}
-            <animated.span className="arrow" style={arrowAnimation}>
-              <FontAwesomeIcon icon={faArrowRight} />
-            </animated.span>
-          </p>
+          <a href="/work">
+            <p>
+              Let's continue to projects.{" "}
+              <animated.span className="arrow" style={arrowAnimation}>
+                <FontAwesomeIcon icon={faArrowRight} />
+              </animated.span>
+            </p>
+          </a>
         </div>
       </div>
       <footer className="footer-text">

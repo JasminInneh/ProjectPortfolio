@@ -1,5 +1,6 @@
 #home-body {
   background-color: #f6f3ee;
+  color: #1a1818;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -24,8 +25,9 @@
 }
 
 .home-large-text {
-  font-size: 10vw; 
+  font-size: 10vw;
   transition: transform 0.3s;
+  color: #1a1818;
 }
 
 .home-large-text a {
@@ -34,7 +36,7 @@
 }
 
 .home-large-text:hover {
-  transform: skew(-10deg);
+  color: #7e7575;
 }
 
 /* Media Queries for Different Screen Sizes */

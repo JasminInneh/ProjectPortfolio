@@ -21,7 +21,7 @@ const Contact = () => {
         <h2 className="animate__animated animate__fadeInDown text-center contact-body-header">
           Contact.
         </h2>
-        <p className="text-center">
+        <p className="text-center animate__animated animate__fadeInDown">
           Get in touch or send me an email directly at{" "}
           <a href="mailto:jasmininneh@gmail.com" className="custom-link">
             jasmininneh@gmail.com
@@ -71,12 +71,14 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <p className="text-center">
-          Back home.{" "}
-          <animated.span className="arrow" style={arrowAnimation}>
-            <FontAwesomeIcon icon={faArrowRight} />
-          </animated.span>
-        </p>
+        <a href="/">
+          <p className="text-center animate__animated animate__fadeInUp">
+            Back home.{" "}
+            <animated.span className="arrow" style={arrowAnimation}>
+              <FontAwesomeIcon icon={faArrowRight} />
+            </animated.span>
+          </p>
+        </a>
       </div>
     </div>
   );
