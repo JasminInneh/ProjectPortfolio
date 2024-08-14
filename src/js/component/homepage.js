@@ -11,7 +11,7 @@ const HomePage = () => {
             Jasmin Nicole Inneh
           </h5>
           <p className="animate__animated animate__fadeInDown">
-            Full Stack Developer | React | JavaScript | Python | MySQL
+            Full Stack Developer | QA Engineer | EdTech Specialist
           </p>
           <p className="animate__animated animate__fadeInDown">
             Creating beautiful and engaging digital experiences in Miami,
