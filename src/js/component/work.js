@@ -29,9 +29,11 @@ const Work = () => {
               TABATA
             </h1>
           </a>
-          <h1 className="large-text display-1 work-large-text animate__animated animate__fadeInUp">
-            SMARTSTART
-          </h1>
+          <a href="https://smart-start-tutors.vercel.app/">
+            <h1 className="large-text display-1 work-large-text animate__animated animate__fadeInUp">
+              SMARTSTART
+            </h1>
+          </a>
           <a href="">
             <h1 className="large-text display-1 work-large-text animate__animated animate__fadeInUp">
               STORYWORLD
