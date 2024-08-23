@@ -1,8 +1,19 @@
 import React from "react";
 import "../../styles/work.css";
+import { useSpring, animated } from "react-spring";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
 
 const Work = () => {
+  const arrowAnimation = useSpring({
+    from: { transform: "translateX(0px)" },
+    to: { transform: "translateX(10px)" },
+    config: { tension: 100, friction: 25 },
+    reset: true,
+    loop: true,
+  });
+
   return (
     <div className="container-fluid" id="work-body">
       <div className="row align-items-center">
@@ -40,6 +51,14 @@ const Work = () => {
             </h1>
           </a>
         </div>
+        <a href="/about">
+          <p>
+            About me.{" "}
+            <animated.span className="arrow" style={arrowAnimation}>
+              <FontAwesomeIcon icon={faArrowRight} />
+            </animated.span>
+          </p>
+        </a>
       </div>
     </div>
   );
