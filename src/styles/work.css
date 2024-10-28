@@ -33,6 +33,7 @@
 
 .work-large-text:hover {
   transform: skew(-10deg);
+  color: #7e7575;
 }
 #work-body a {
   color: inherit;
@@ -67,7 +68,7 @@
 @media (min-width: 1200px) {
   /* For large desktops */
   .work-large-text {
-    font-size: 145px;
+    font-size: 130px;
   }
 
   .work-right-column {

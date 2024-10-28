@@ -37,12 +37,12 @@ const Work = () => {
         <div className="col-12 col-md-8 work-right-column d-none d-md-block">
           <a href="https://k3m43z.csb.app/">
             <h1 className="large-text display-1 work-large-text animate__animated animate__fadeInUp">
-              BODY
+              CURRICULA
             </h1>
           </a>
           <a href="https://smart-start-tutors.vercel.app/">
             <h1 className="large-text display-1 work-large-text animate__animated animate__fadeInUp">
-              SMARTSTART
+              EDTECH
             </h1>
           </a>
           <a href="/websites">
