@@ -19,6 +19,8 @@ import Work from "./component/work";
 import About from "./component/about";
 import MyNavbar from "./component/navbar";
 import Contact from "./component/contact";
+import Websites from "./component/websites";
+
 
 const App = () => (
   <Router>
@@ -28,6 +30,7 @@ const App = () => (
       <Route path="/work" element={<Work />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/websites" element={<Websites />} />
     </Routes>
   </Router>
 );
