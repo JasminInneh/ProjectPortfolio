@@ -1,0 +1,39 @@
+#websites-body {
+    background-color: #1a1818;
+    color: #ece7e1;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  .websites-title {
+    font-size: 3vw;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .websites-description {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .project-link {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-title {
+    font-size: 2vw;
+    transition: transform 0.3s;
+    color: #ece7e1;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .project-title:hover {
+    transform: skew(-5deg);
+    color: #f5d36e;
+  }
+  
