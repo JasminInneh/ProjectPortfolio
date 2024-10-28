@@ -40,7 +40,7 @@ const Work = () => {
               CURRICULA
             </h1>
           </a>
-          <a href="https://smart-start-tutors.vercel.app/">
+          <a href="/edtech">
             <h1 className="large-text display-1 work-large-text animate__animated animate__fadeInUp">
               EDTECH
             </h1>
