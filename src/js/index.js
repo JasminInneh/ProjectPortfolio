@@ -20,6 +20,7 @@ import About from "./component/about";
 import MyNavbar from "./component/navbar";
 import Contact from "./component/contact";
 import Websites from "./component/websites";
+import EdTech from "./component/edtech";
 
 
 const App = () => (
@@ -31,6 +32,7 @@ const App = () => (
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/websites" element={<Websites />} />
+      <Route path="/edtech" element={<EdTech />} />
     </Routes>
   </Router>
 );
