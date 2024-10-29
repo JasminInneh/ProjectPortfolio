@@ -11,11 +11,12 @@ const HomePage = () => {
             Jasmin Nicole Inneh
           </h5>
           <p className="animate__animated animate__fadeInDown">
-            Full Stack Developer | QA Engineer | EdTech Specialist
+            Full Stack Developer | QA Engineer | EdTech Innovator
           </p>
           <p className="animate__animated animate__fadeInDown">
-            Creating beautiful and engaging digital experiences in Miami,
-            Florida.
+            Crafting engaging digital experiences and innovative curricula for{" "}
+            <br />
+            technology education in Miami, Florida.
           </p>
         </div>
         <div className="col-12 col-md-6 home-right-column d-none d-md-block">

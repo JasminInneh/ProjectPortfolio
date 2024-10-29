@@ -22,22 +22,26 @@ const Work = () => {
             WORK
           </h5>
           <p className="animate__animated animate__fadeInDown">
-            This is a showcase of my finest projects across multiple domains,
-            reflecting my proficiency as a full-stack developer with a strong
-            inclination towards frontend development. My technical expertise
-            includes proficiency in React, Bootstrap, JavaScript, CSS for
-            frontend development, and Python and MySQL for backend solutions.
+            Welcome to my project showcase! Here, you'll find a curated
+            selection of my most impactful projects, highlighting my expertise
+            in full-stack development, particularly in EdTech and curriculum
+            development for computer science and technology programs. My
+            technical skills include React, Bootstrap, JavaScript, and CSS for
+            creating engaging user interfaces, alongside Python and MySQL for
+            robust backend solutions.
           </p>
           <p className="animate__animated animate__fadeInDown">
-            As the digital landscape continually evolves, I adapt and grow,
-            constantly acquiring new skills and knowledge to remain at the
-            cutting edge of innovation and creativity.
+            As the digital landscape continues to evolve, I am dedicated to
+            advancing educational technology and developing innovative
+            curricula. I actively pursue new skills and knowledge to remain at
+            the forefront of industry trends, ensuring that my work not only
+            meets current educational needs but also inspires future learners.
           </p>
         </div>
         <div className="col-12 col-md-8 work-right-column d-none d-md-block">
           <a href="https://k3m43z.csb.app/">
             <h1 className="large-text display-1 work-large-text animate__animated animate__fadeInUp">
-              CURRICULA
+              EDUQUEST
             </h1>
           </a>
           <a href="/edtech">
