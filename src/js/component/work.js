@@ -39,7 +39,8 @@ const Work = () => {
           </p>
         </div>
         <div className="col-12 col-md-8 work-right-column d-none d-md-block">
-          <a href="https://k3m43z.csb.app/">
+          <h2>Coming Soon!</h2>
+          {/* <a href="https://k3m43z.csb.app/"> */}
             <h1 className="large-text display-1 work-large-text animate__animated animate__fadeInUp">
               EDUQUEST
             </h1>
