@@ -132,6 +132,14 @@ const EdTech = () => {
             >
               Standard Mapping
             </a>
+            <a
+              href="https://docs.google.com/document/d/e/2PACX-1vRChYy4nALIfVmASnIPY06elRD04X0vyUaq5KB3R9fu3GXbrTRJdyhR9NGnLFzKrHoaAdyUms_Wc57p/pub"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resource-link"
+            >
+              Artifical Intelligence
+            </a>
           </div>
         </div>
         {/* <div className="col-12 mt-4">
